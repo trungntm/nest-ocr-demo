@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { OcrModule } from './modules/ocr/ocr.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -9,7 +10,7 @@ import { OcrModule } from './modules/ocr/ocr.module';
     }),
     OcrModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}

@@ -4,7 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { OcrController } from './ocr.controller';
 import { OcrService } from './ocr.service';
 import { OcrProcessor } from './ocr.processor';
-import { RedisModule } from 'src/common/redis/redis.module';
+import { RedisModule } from '../../common/redis/redis.module';
 
 @Module({
   imports: [
